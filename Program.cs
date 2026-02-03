@@ -8,6 +8,7 @@ namespace Projeto2026
                 //Biblioteca
                {"Biblioteca de Livros", Biblioteca_de_Livros.Executar},
                {"Biblioteca de Revistas", BibliotecaDeRevistas.Executar},
+               {"Biblioteca de Fotos", BibliotecaDeFotos.Executar},
 
             });
 
