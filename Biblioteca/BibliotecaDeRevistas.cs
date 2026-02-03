@@ -36,6 +36,18 @@ namespace Projeto2026.Biblioteca
            Console.WriteLine("Mês da Publicação: " + revista.Mes);
            Console.WriteLine("Ano da Publicação: " + revista.Ano);
            Console.WriteLine("Status: " + revista.Status);
+
+           var revista2 = new Revista(2, 2026);
+           revista2.Titulo = "Capitão América";
+           revista2.Autor = "Steve Ditko";
+           revista2.Paginas = 248;
+           revista2.Status = true;
+           Console.WriteLine("Titulo: " + revista2.Titulo);
+           Console.WriteLine("Autor: " + revista2.Autor);
+           Console.WriteLine("Páginas: " + revista2.Paginas);
+           Console.WriteLine("Mês da Publicação: " + revista2.Mes);
+           Console.WriteLine("Ano da Publicação: " + revista2.Ano);
+           Console.WriteLine("Status: " + revista2.Status);
         }
     }
 }
