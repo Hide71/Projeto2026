@@ -7,6 +7,7 @@ namespace Projeto2026
             var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 //Biblioteca
                {"Biblioteca de Livros", Biblioteca_de_Livros.Executar},
+               {"Biblioteca de Revistas", BibliotecaDeRevistas.Executar},
 
             });
 

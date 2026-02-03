@@ -37,10 +37,10 @@ namespace Projeto2026.Biblioteca
         Console.WriteLine( "Status : " + Meu_Livro.Status);
 
         var Livro_2 = new Livro("Juan Garcia Sola", "Linguagem C", 296, true);
-        Console.WriteLine("Autor" + Livro_2.Autor);
-        Console.WriteLine("Titulo" + Livro_2.Titulo);
-        Console.WriteLine("Páginas" + Livro_2.Paginas);
-        Console.WriteLine("Status" + Livro_2.Status);
+        Console.WriteLine("Autor: " + Livro_2.Autor);
+        Console.WriteLine("Titulo: " + Livro_2.Titulo);
+        Console.WriteLine("Páginas: " + Livro_2.Paginas);
+        Console.WriteLine("Status: " + Livro_2.Status);
 
        }
     }
