@@ -10,6 +10,7 @@ namespace Projeto2026.Biblioteca
         public string Autor { get; set;}
         public int Paginas { get; set;}
         public bool Status { get; set;}
+        public string MensagemDescarte { get; set;}
 
         public Livro(){
 
@@ -19,6 +20,9 @@ namespace Projeto2026.Biblioteca
             Autor = autor;
             Paginas = paginas;
             Status = status;
+        }
+        public virtual void Descarte(){
+            MensagemDescarte = "O livro foi doado";
         }
     }
   
@@ -31,16 +35,23 @@ namespace Projeto2026.Biblioteca
         Meu_Livro.Paginas = 203;
         Meu_Livro.Status = true;
 
+
         Console.WriteLine( "Autor: " + Meu_Livro.Autor);
         Console.WriteLine( "Titulo: " + Meu_Livro.Titulo);
         Console.WriteLine( "Páginas : " + Meu_Livro.Paginas);
         Console.WriteLine( "Status : " + Meu_Livro.Status);
+        Meu_Livro.Descarte();
+        Console.WriteLine( Meu_Livro.MensagemDescarte);
+        Console.WriteLine( );
 
         var Livro_2 = new Livro("Juan Garcia Sola", "Linguagem C", 296, true);
         Console.WriteLine("Autor: " + Livro_2.Autor);
         Console.WriteLine("Titulo: " + Livro_2.Titulo);
         Console.WriteLine("Páginas: " + Livro_2.Paginas);
         Console.WriteLine("Status: " + Livro_2.Status);
+        Livro_2.Descarte();
+        Console.WriteLine(Livro_2.MensagemDescarte);
+
 
        }
     }

@@ -15,6 +15,9 @@ namespace Projeto2026.Biblioteca
         public Foto(string tipo): base(){
             Tipo = tipo;
         }
+        public override void Descarte(){
+            this.MensagemDescarte = "A foto foi destruida";
+        }
     }
     public class BibliotecaDeFotos
     {
@@ -28,6 +31,7 @@ namespace Projeto2026.Biblioteca
            foto.Status = true;
            foto.Ano = 2020;
            foto.Mes = 4;
+           foto.Descarte();
            Console.WriteLine("Autor: " + foto.Autor);
            Console.WriteLine( "Titulo: " + foto.Titulo);
            Console.WriteLine( "Páginas : " + foto.Paginas);
@@ -44,6 +48,7 @@ namespace Projeto2026.Biblioteca
            foto2.Status = true;
            foto2.Ano = 2026;
            foto2.Mes = 12; 
+           foto2.Descarte();
 
            Console.WriteLine("Autor: " + foto2.Autor);
            Console.WriteLine( "Titulo: " + foto2.Titulo);
@@ -51,8 +56,10 @@ namespace Projeto2026.Biblioteca
            Console.WriteLine( "Status : " + foto2.Status);
            Console.WriteLine("Mês da Publicação: " + foto2.Mes);
            Console.WriteLine("Ano da Publicação: " + foto2.Ano);
-           Console.WriteLine("Tipo: " + foto2.Tipo);
-           
+           Console.WriteLine("Tipo: " + foto2.Tipo);   
+           Console.WriteLine();   
+           Console.WriteLine("Descarte da foto: " + foto.MensagemDescarte);   
+           Console.WriteLine("Descarte da foto: " + foto2.MensagemDescarte);   
             
         }
     }
